@@ -43,11 +43,34 @@
       gap: 20px;
       margin-top: 20px;
     }
-    iframe {
-      width: 100%;
-      aspect-ratio: 16 / 9;
-      border: 0;
+    .video-card {
+      background: #1e293b;
       border-radius: 10px;
+      padding: 10px;
+      text-align: center;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .video-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    .video-thumb {
+      width: 100%;
+      border-radius: 10px;
+      aspect-ratio: 16 / 9;
+      background: #334155;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #94a3b8;
+      font-size: 1rem;
+    }
+    .video-card a {
+      color: var(--accent);
+      text-decoration: none;
+      display: block;
+      margin-top: 8px;
+      font-weight: 500;
     }
     footer {
       text-align: center;
@@ -71,9 +94,20 @@
   <section>
     <h2>🎥 My Works</h2>
     <div class="video-grid">
-      <iframe src="https://https://x.com/promise_oj/status/1906044897053868135" title="Project 1"></iframe>
-      <iframe src="https://https://x.com/promise_oj/status/1963643978898968764" title="Project 2"></iframe>
-      <iframe src="https://https://x.com/promise_oj/status/1973424625095995851" title="Project 3"></iframe>
+      <div class="video-card">
+        <div class="video-thumb">Preview unavailable</div>
+        <a href="https://x.com/promise_oj/status/1906044897053868135" target="_blank">View Project 1 on X</a>
+      </div>
+
+      <div class="video-card">
+        <div class="video-thumb">Preview unavailable</div>
+        <a href="https://x.com/promise_oj/status/1963643978898968764" target="_blank">View Project 2 on X</a>
+      </div>
+
+      <div class="video-card">
+        <div class="video-thumb">Preview unavailable</div>
+        <a href="https://x.com/promise_oj/status/1973424625095995851" target="_blank">View Project 3 on X</a>
+      </div>
     </div>
 
     <h2>👋 About Me</h2>
@@ -84,9 +118,9 @@
 
     <h2>📩 Contact</h2>
     <p>
-      <a href="https://x.com/promise_oj">Twitter</a> • 
+      <a href="https://x.com/promise_oj" target="_blank">Twitter</a> • 
       <a href="mailto:0xpromise091@gmail.com">Email</a> • 
-      <a href="https://www.youtube.com/@promiseoj">YouTube</a>
+      <a href="https://www.youtube.com/@promiseoj" target="_blank">YouTube</a>
     </p>
   </section>
 
